@@ -1,0 +1,205 @@
+<!doctype html>
+<!--
+  Политика конфиденциальности для сторов: на неё указывает PRIVACY_POLICY_URL в настройках
+  приложения и поле Privacy Policy в карточках App Store и Google Play. Здесь — исходник;
+  публикуется страница из отдельного публичного репозитория rekura-site (GitHub Pages),
+  куда копируется при каждом изменении. Внешних ресурсов нет намеренно. Содержание
+  описывает фактическое поведение приложения — менять код, не меняя эту страницу, нельзя.
+-->
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rekura — политика конфиденциальности / Privacy policy</title>
+  <style>
+    :root {
+      --bg: #FAF8F3;
+      --text: #211C12;
+      --muted: #77705F;
+      --line: rgba(33, 28, 18, .10);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1D1A13;
+        --text: #EDE6D6;
+        --muted: #A79E89;
+        --line: rgba(237, 230, 214, .14);
+      }
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 400 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { max-width: 640px; margin: 0 auto; padding: 40px 20px 64px; }
+    h1 { font-size: 26px; font-weight: 600; margin: 0 0 4px; }
+    h2 { font-size: 19px; font-weight: 600; margin: 36px 0 8px; }
+    h3 { font-size: 16px; font-weight: 600; margin: 20px 0 4px; }
+    .muted { color: var(--muted); }
+    ul { padding-left: 22px; }
+    li { margin: 6px 0; }
+    hr { border: none; border-top: 1px solid var(--line); margin: 36px 0; }
+    a { color: inherit; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Rekura</h1>
+  <p class="muted">Политика конфиденциальности · Privacy policy · 15.08.2026</p>
+
+  <p>
+    Rekura — приложение для изучения английской лексики. Им можно пользоваться целиком
+    без аккаунта: тогда все ваши данные — карточки, переводы, заметки, картинки, история
+    ответов — хранятся только на вашем устройстве, и мы не имеем к ним доступа.
+  </p>
+
+  <h2>Что мы собираем и зачем</h2>
+
+  <h3>Аккаунт и синхронизация (по желанию)</h3>
+  <p>
+    Если вы входите через Google, чтобы синхронизировать данные между устройствами, в
+    облаке (Supabase, серверы в ЕС) хранятся: адрес электронной почты входа, ваши
+    карточки — слова, переводы, транскрипции, заметки, примеры, — прикреплённые
+    картинки, наборы и история ответов с показателями запоминания. Эти данные нужны
+    ровно для одного — показать вашу библиотеку на других ваших устройствах. Доступ к
+    ним есть только у вас: строки и файлы разграничены по учётной записи на уровне базы.
+  </p>
+
+  <h3>Запросы к внешним сервисам</h3>
+  <ul>
+    <li>
+      <strong>Автозаполнение карточки</strong>: введённое слово отправляется словарному
+      сервису (dictionaryapi.dev / Wiktionary), чтобы подставить транскрипцию и примеры.
+    </li>
+    <li>
+      <strong>Поиск картинок</strong> (только для вошедших): слово отправляется через наш
+      сервер сервисам Pixabay и Pexels. Запросы ограничены суточной квотой; кроме самого
+      слова, сервисам ничего не передаётся.
+    </li>
+  </ul>
+  <p>
+    Озвучка слов работает голосами самой системы, на устройстве; текст никуда не
+    отправляется.
+  </p>
+
+  <h3>Диагностика (можно выключить)</h3>
+  <p>
+    Приложение отправляет отчёты о сбоях (Firebase Crashlytics) и обезличенную статистику
+    использования экранов и функций (Firebase Analytics). В этих событиях нет ни слов, ни
+    переводов, ни текстов ваших карточек, и они не привязаны к вашему аккаунту.
+    Рекламный идентификатор не собирается. Выключатель — в настройках, раздел
+    «О приложении»; он гасит и отчёты о сбоях, и статистику разом.
+  </p>
+
+  <h2>Чего мы не делаем</h2>
+  <ul>
+    <li>Не показываем рекламу и не собираем данные для неё.</li>
+    <li>Не продаём и не передаём ваши данные третьим лицам.</li>
+    <li>Не используем ваши карточки ни для чего, кроме синхронизации между вашими устройствами.</li>
+  </ul>
+
+  <h2>Хранение и удаление</h2>
+  <p>
+    Данные в облаке хранятся, пока существует аккаунт. Удалить аккаунт можно прямо в
+    приложении (Настройки → Синхронизация → «Удалить аккаунт») — вместе с ним
+    безвозвратно стираются все данные в облаке, включая саму учётную запись. Как удалить
+    аккаунт без приложения — на странице
+    <a href="delete-account.html">удаления аккаунта</a>. Данные на устройстве можно
+    стереть там же в настройках («Стереть все данные») или удалив приложение.
+  </p>
+
+  <h2>Ваши права</h2>
+  <p>
+    Вы можете в любой момент выгрузить все свои данные файлом (Настройки → «Экспорт»),
+    исправить их в приложении, удалить их или весь аккаунт, а также отключить
+    диагностику. По любым вопросам о ваших данных пишите на
+    <a href="mailto:49serggor@gmail.com">49serggor@gmail.com</a> — ответим и удовлетворим
+    запрос в течение 30 дней.
+  </p>
+
+  <h2>Изменения</h2>
+  <p>
+    Если политика изменится, новая версия появится на этой странице с новой датой.
+  </p>
+
+  <hr>
+
+  <p class="muted">English version</p>
+
+  <p>
+    Rekura is an app for learning English vocabulary. It is fully usable without an
+    account: in that case all your data — cards, translations, notes, images, review
+    history — is stored only on your device, and we have no access to it.
+  </p>
+
+  <h2>What we collect and why</h2>
+
+  <h3>Account and sync (optional)</h3>
+  <p>
+    If you sign in with Google to sync between devices, the cloud (Supabase, servers in
+    the EU) stores: your sign-in email address, your cards — words, translations,
+    transcriptions, notes, examples — attached images, sets, and review history with
+    retention metrics. This data serves one purpose: showing your library on your other
+    devices. Only you can access it — rows and files are isolated per account at the
+    database level.
+  </p>
+
+  <h3>Requests to external services</h3>
+  <ul>
+    <li>
+      <strong>Card autofill</strong>: the word you type is sent to a dictionary service
+      (dictionaryapi.dev / Wiktionary) to fetch transcription and examples.
+    </li>
+    <li>
+      <strong>Image search</strong> (signed-in users only): the word is sent through our
+      server to Pixabay and Pexels. Requests are limited by a daily quota; nothing but
+      the word itself is shared.
+    </li>
+  </ul>
+  <p>
+    Word pronunciation uses the system's own voices, on the device; no text is sent
+    anywhere.
+  </p>
+
+  <h3>Diagnostics (can be turned off)</h3>
+  <p>
+    The app sends crash reports (Firebase Crashlytics) and anonymous usage statistics of
+    screens and features (Firebase Analytics). These events contain no words, no
+    translations, none of your card content, and are not linked to your account. No
+    advertising identifier is collected. The toggle is in Settings, “About” section; it
+    disables both crash reports and statistics at once.
+  </p>
+
+  <h2>What we don't do</h2>
+  <ul>
+    <li>No ads, and no data collection for advertising.</li>
+    <li>We do not sell or share your data with third parties.</li>
+    <li>Your cards are used for nothing but syncing between your own devices.</li>
+  </ul>
+
+  <h2>Storage and deletion</h2>
+  <p>
+    Cloud data is kept as long as the account exists. You can delete the account right in
+    the app (Settings → Sync → “Delete account”) — this permanently erases all cloud
+    data, including the account itself. To delete the account without the app, see the
+    <a href="delete-account.html">account deletion page</a>. On-device data can be erased
+    in the same settings (“Erase all data”) or by uninstalling the app.
+  </p>
+
+  <h2>Your rights</h2>
+  <p>
+    At any time you can export all your data to a file (Settings → “Export”), correct it
+    in the app, delete it or the whole account, and turn diagnostics off. For any
+    questions about your data, write to
+    <a href="mailto:49serggor@gmail.com">49serggor@gmail.com</a> — we will respond and
+    fulfil requests within 30 days.
+  </p>
+
+  <h2>Changes</h2>
+  <p>
+    If this policy changes, the new version will appear on this page with a new date.
+  </p>
+</main>
+</body>
+</html>

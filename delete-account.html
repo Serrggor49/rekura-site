@@ -1,0 +1,107 @@
+<!doctype html>
+<!--
+  Страница удаления аккаунта для карточки Google Play: политика Data deletion требует
+  ссылку, по которой удаление можно запросить, не устанавливая приложение. Здесь —
+  исходник; публикуется страница из отдельного публичного репозитория rekura-site
+  (GitHub Pages), куда копируется при каждом изменении. Внешних ресурсов нет намеренно.
+-->
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rekura — удаление аккаунта / Delete your account</title>
+  <style>
+    :root {
+      --bg: #FAF8F3;
+      --text: #211C12;
+      --muted: #77705F;
+      --line: rgba(33, 28, 18, .10);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1D1A13;
+        --text: #EDE6D6;
+        --muted: #A79E89;
+        --line: rgba(237, 230, 214, .14);
+      }
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 400 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { max-width: 640px; margin: 0 auto; padding: 40px 20px 64px; }
+    h1 { font-size: 26px; font-weight: 600; margin: 0 0 4px; }
+    h2 { font-size: 19px; font-weight: 600; margin: 36px 0 8px; }
+    p, li { color: var(--text); }
+    .muted { color: var(--muted); }
+    ol { padding-left: 22px; }
+    li { margin: 6px 0; }
+    hr { border: none; border-top: 1px solid var(--line); margin: 36px 0; }
+    a { color: inherit; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Rekura</h1>
+  <p class="muted">Удаление аккаунта и данных · Account &amp; data deletion</p>
+
+  <h2>Удалить аккаунт из приложения</h2>
+  <ol>
+    <li>Откройте <strong>Настройки → Синхронизация</strong>.</li>
+    <li>Нажмите <strong>«Удалить аккаунт»</strong> и подтвердите.</li>
+  </ol>
+  <p>
+    Будут безвозвратно удалены: сама учётная запись, карточки, наборы, история ответов,
+    статистика и картинки — и на устройстве, и в облаке. Восстановить их будет нельзя.
+  </p>
+
+  <h2>Удалить аккаунт без приложения</h2>
+  <p>
+    Напишите на <a href="mailto:49serggor@gmail.com?subject=Rekura%20account%20deletion">49serggor@gmail.com</a>
+    с адреса Google, которым входили в приложение, с темой «Rekura account deletion».
+    Учётная запись и все её данные будут удалены в течение 30 дней.
+  </p>
+
+  <h2>Что и как хранится</h2>
+  <p>
+    Аккаунт нужен только для синхронизации между устройствами. За ним хранятся: адрес
+    электронной почты входа, карточки со словами и переводами, история ответов и
+    прикреплённые картинки. При удалении аккаунта всё это стирается без остатка;
+    частичное удаление не предусмотрено — приложением можно пользоваться и вовсе без
+    аккаунта. Обезличенная статистика сбоев и использования (Firebase), если вы её не
+    отключили в настройках, к аккаунту не привязана.
+  </p>
+
+  <hr>
+
+  <h2>Delete your account in the app</h2>
+  <ol>
+    <li>Open <strong>Settings → Sync</strong>.</li>
+    <li>Tap <strong>“Delete account”</strong> and confirm.</li>
+  </ol>
+  <p>
+    This permanently deletes the account itself along with your cards, sets, review
+    history, statistics and images — both on the device and in the cloud. This cannot
+    be undone.
+  </p>
+
+  <h2>Delete your account without the app</h2>
+  <p>
+    Email <a href="mailto:49serggor@gmail.com?subject=Rekura%20account%20deletion">49serggor@gmail.com</a>
+    from the Google address you signed in with, using the subject “Rekura account
+    deletion”. The account and all associated data will be deleted within 30 days.
+  </p>
+
+  <h2>What is stored</h2>
+  <p>
+    The account exists only to sync your library between devices. It stores: the sign-in
+    email address, your cards with words and translations, review history and attached
+    images. Deleting the account erases all of it; partial deletion is not offered — the
+    app is fully usable without an account. Anonymous crash and usage diagnostics
+    (Firebase), unless disabled in the settings, are not linked to the account.
+  </p>
+</main>
+</body>
+</html>
